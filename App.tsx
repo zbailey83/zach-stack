@@ -6,18 +6,26 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center overflow-x-hidden bg-lumina-night">
-      {/* Noise Texture Overlay */}
-      <div className="noise-bg" />
+    <div className="relative min-h-screen flex flex-col items-center overflow-x-hidden">
+      {/* Background Pattern */}
+      <div className="fixed inset-0 pointer-events-none z-0 bg-dots" />
 
-      {/* Fluid Background Blobs */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-         <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-lumina-deepIndigo/40 rounded-full blur-[100px] animate-blob mix-blend-screen" />
-         <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-lumina-teal/10 rounded-full blur-[100px] animate-blob animation-delay-2000 mix-blend-screen" />
-         <div className="absolute top-[40%] left-[30%] w-[40vw] h-[40vw] bg-lumina-periwinkle/20 rounded-full blur-[100px] animate-blob animation-delay-4000 mix-blend-screen" />
+      {/* Memphis Decorative Shapes */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Top Left Circle */}
+        <div className="absolute -top-20 -left-20 w-64 h-64 bg-max-yellow rounded-full border-4 border-black mix-blend-multiply opacity-80" />
+        
+        {/* Bottom Right Triangle (Using CSS borders for triangle is tricky, using rotated box) */}
+        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-max-green rotate-45 border-4 border-black mix-blend-multiply opacity-80" />
+        
+        {/* Floating Squiggle (Approximated with CSS) */}
+        <div className="absolute top-1/4 right-[-5%] w-48 h-12 bg-max-purple rounded-full rotate-[-15deg] border-4 border-black opacity-60" />
+        
+        {/* Floating Dots */}
+        <div className="absolute bottom-1/3 left-[-2%] w-24 h-24 bg-max-blue rounded-full border-4 border-black opacity-70" />
       </div>
 
-      <div className="w-full max-w-7xl z-10 flex flex-col gap-16 p-6 sm:p-8 md:p-12">
+      <div className="w-full max-w-[1400px] z-10 flex flex-col gap-12 p-4 sm:p-8 md:p-12">
         <Header />
         <main className="min-h-[60vh]">
           <BentoGrid items={PROJECTS} />

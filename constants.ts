@@ -6,7 +6,10 @@ import {
   Video, 
   TrendingUp, 
   Zap, 
-  Users 
+  Users,
+  Target,
+  Palette,
+  Leaf
 } from 'lucide-react';
 import { Project } from './types';
 
@@ -18,7 +21,7 @@ export const PROJECTS: Project[] = [
     url: 'https://beatslicer-ai-875855106263.us-west1.run.app/',
     icon: Music,
     category: 'Audio',
-    color: 'from-lumina-teal to-lumina-mint'
+    color: '' // Handled by component based on category
   },
   {
     id: 'lumina',
@@ -27,7 +30,7 @@ export const PROJECTS: Project[] = [
     url: 'https://lumina-daily-faith-community-875855106263.us-west1.run.app/',
     icon: Heart,
     category: 'Lifestyle',
-    color: 'from-lumina-periwinkle to-lumina-deepIndigo'
+    color: ''
   },
   {
     id: 'content-rocket',
@@ -36,7 +39,7 @@ export const PROJECTS: Project[] = [
     url: 'https://content-rocket-875855106263.us-west1.run.app',
     icon: Rocket,
     category: 'Education',
-    color: 'from-lumina-teal to-blue-500'
+    color: ''
   },
   {
     id: 'rocket-responder',
@@ -45,7 +48,7 @@ export const PROJECTS: Project[] = [
     url: 'https://rocket-responder-875855106263.us-west1.run.app/',
     icon: Bot,
     category: 'Agents',
-    color: 'from-purple-500 to-lumina-periwinkle'
+    color: ''
   },
   {
     id: 'vidseo',
@@ -54,7 +57,7 @@ export const PROJECTS: Project[] = [
     url: 'https://vidseo-875855106263.us-west1.run.app/',
     icon: Video,
     category: 'Marketing',
-    color: 'from-red-400 to-orange-400'
+    color: ''
   },
   {
     id: 'cardvalue',
@@ -63,7 +66,7 @@ export const PROJECTS: Project[] = [
     url: 'https://cardvalue-ai-875855106263.us-west1.run.app/',
     icon: TrendingUp,
     category: 'Finance',
-    color: 'from-emerald-400 to-lumina-mint'
+    color: ''
   },
   {
     id: 'omni',
@@ -72,7 +75,34 @@ export const PROJECTS: Project[] = [
     url: 'https://omnicontent-engine-875855106263.us-west1.run.app/',
     icon: Zap,
     category: 'Productivity',
-    color: 'from-yellow-400 to-amber-500'
+    color: ''
+  },
+  {
+    id: '3dcc',
+    title: '3DCC Marketing',
+    description: 'AI-Powered Marketing Strategies',
+    url: 'https://3daycourse.netlify.app',
+    icon: Target,
+    category: 'Marketing',
+    color: ''
+  },
+  {
+    id: 'instaui',
+    title: 'InstaUI',
+    description: 'DesignStyleRef JSON Gallery',
+    url: 'https://design-styles-gallery-875855106263.us-west1.run.app/',
+    icon: Palette,
+    category: 'Design',
+    color: ''
+  },
+  {
+    id: 'plantdoc',
+    title: 'PlantDoc',
+    description: 'Mobile App for Plant Health',
+    url: 'https://plantdoc-875855106263.us-west1.run.app/',
+    icon: Leaf,
+    category: 'Lifestyle',
+    color: ''
   },
   {
     id: 'predacted',
@@ -81,6 +111,6 @@ export const PROJECTS: Project[] = [
     url: '#', 
     icon: Users,
     category: 'Web3',
-    color: 'from-indigo-400 to-blue-600'
+    color: ''
   },
 ];

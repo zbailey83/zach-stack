@@ -2,13 +2,13 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full py-8 mt-12 border-t border-white/5 text-center relative z-10">
-      <div className="flex flex-col items-center gap-4">
-        <p className="text-lumina-periwinkle/60 text-xs font-display tracking-[0.2em] uppercase">
-          Lumina Design System v1.0
+    <footer className="w-full py-12 mt-12 relative z-10 flex justify-center">
+      <div className="bg-white border-4 border-black p-6 shadow-hard rotate-1 max-w-md text-center transform hover:rotate-0 transition-transform">
+        <p className="font-hand text-xl text-black mb-2">
+          Made with <span className="text-max-red">♥</span> & Chaos
         </p>
-        <p className="text-white/20 text-[10px] font-mono">
-          © {new Date().getFullYear()} ALL RIGHTS RESERVED
+        <p className="text-xs font-mono bg-black text-white inline-block px-2 py-1">
+          © {new Date().getFullYear()} DESIGN SYSTEM V.2
         </p>
       </div>
     </footer>
