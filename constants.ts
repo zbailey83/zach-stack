@@ -107,8 +107,8 @@ export const PROJECTS: Project[] = [
   {
     id: 'predacted',
     title: 'Predacted',
-    description: 'Polymarket PM Consensus Agent Swarm',
-    url: '#', 
+    description: 'Prediction Market Research/Consensus Agent Swarm',
+    url: 'https://service-4castr-875855106263.us-west1.run.app', 
     icon: Users,
     category: 'Web3',
     color: ''
