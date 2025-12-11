@@ -97,9 +97,9 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'plantdoc',
-    title: 'PlantDoc',
+    title: 'Verdant',
     description: 'Mobile App for Plant Health',
-    url: 'https://plantdoc-875855106263.us-west1.run.app/',
+    url: 'https://verdan-875855106263.us-west1.run.app/',
     icon: Leaf,
     category: 'Lifestyle',
     color: ''
@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     id: 'predacted',
     title: 'Predacted',
     description: 'Prediction Market Research/Consensus Agent Swarm',
-    url: 'https://service-4castr-875855106263.us-west1.run.app', 
+    url: 'https://predacted.netlify.app/', 
     icon: Users,
     category: 'Web3',
     color: ''
